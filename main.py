@@ -144,6 +144,7 @@ if __name__ == "__main__":
                 else:
                     print("ServerID: %s has been successfully renewed!" % k)
                     TOKEN and notify_user(token=TOKEN, msg="ServerID: %s has been successfully renewed!" % k)
+                    time.sleep(30)
             else:
                 print("ServerID: %s does not need to be renewed" % k)
         time.sleep(15)
